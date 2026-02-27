@@ -1,0 +1,166 @@
+:root {
+  --bg: #f4f1ea;
+  --bg-card: #fffdf8;
+  --text: #1b1c1f;
+  --muted: #5a5e66;
+  --accent: #bd4a2f;
+  --accent-dark: #993924;
+  --line: #d8d2c6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Avenir Next", "Helvetica Neue", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 90% 0%, #f7e5d3 0, transparent 35%),
+    radial-gradient(circle at 10% 20%, #e8efe3 0, transparent 40%),
+    var(--bg);
+  line-height: 1.6;
+}
+
+.page-shell {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2rem;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.brand {
+  text-decoration: none;
+  color: var(--text);
+  display: grid;
+}
+
+.brand-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.brand-role {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.site-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.site-nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.site-nav a:hover {
+  color: var(--accent);
+}
+
+.hero,
+.panel {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1.5rem;
+}
+
+.hero {
+  margin-bottom: 1.2rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+.hero h1 {
+  margin: 0.35rem 0;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.hero-copy {
+  margin: 0 0 1rem;
+  max-width: 62ch;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+}
+
+.button:hover {
+  background: var(--accent-dark);
+}
+
+.post-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.post-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1rem;
+  background: #fff;
+}
+
+.post-card h3 {
+  margin: 0.2rem 0;
+}
+
+.post-card a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.post-card a:hover {
+  color: var(--accent);
+}
+
+.post-date {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.prose h1,
+.prose h2,
+.prose h3 {
+  line-height: 1.25;
+}
+
+.site-footer {
+  margin-top: 1.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 680px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

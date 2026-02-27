@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <p class="eyebrow">Professional Blog</p>
+  <h1>{{ site.title }}</h1>
+  <p class="hero-copy">{{ site.description }}</p>
+  <a class="button" href="{{ site.cta_link }}">{{ site.cta_label }}</a>
+</section>
+
+<section class="panel">
+  <h2>Latest Posts</h2>
+  <ul class="post-grid">
+    {% for post in site.posts %}
+      <li class="post-card">
+        <p class="post-date">{{ post.date | date: "%b %-d, %Y" }}</p>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html | truncate: 130 }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
