@@ -21,13 +21,12 @@
 title: Sudip Shrestha
 email: sudip10k89@gmail.com
 description: >-
-  Software engineer sharing practical notes on web development, architecture,
-  and product-focused engineering.
+  Computer engineering student sharing experiences gained by learning.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: sudip10k89
 github_username: sudip10k89
-location: United States
+location: Nepal
 tagline: Software Engineer
 cta_label: Contact Me
 cta_link: "mailto:sudip10k89@gmail.com"
