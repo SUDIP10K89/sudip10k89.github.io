@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am Sudip Shrestha, a computer engineering student proficient in web development and currently learning ai.
+I am Sudip Shrestha, a computer engineering student proficient in web development and currently learning  GEN AI.
 
 ## What I work on
 

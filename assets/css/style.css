@@ -1,11 +1,11 @@
 :root {
-  --bg: #f4f1ea;
-  --bg-card: #fffdf8;
-  --text: #1b1c1f;
-  --muted: #5a5e66;
-  --accent: #bd4a2f;
-  --accent-dark: #993924;
-  --line: #d8d2c6;
+  --bg: #1a1a1a;
+  --bg-card: #252525;
+  --text: #e4e4e4;
+  --muted: #a0a0a0;
+  --accent: #e07a5f;
+  --accent-dark: #c45c42;
+  --line: #3a3a3a;
 }
 
 * {
@@ -17,8 +17,8 @@ body {
   font-family: "Segoe UI", "Avenir Next", "Helvetica Neue", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at 90% 0%, #f7e5d3 0, transparent 35%),
-    radial-gradient(circle at 10% 20%, #e8efe3 0, transparent 40%),
+    radial-gradient(circle at 90% 0%, #2a2520 0, transparent 35%),
+    radial-gradient(circle at 10% 20%, #1e2820 0, transparent 40%),
     var(--bg);
   line-height: 1.6;
 }
@@ -124,7 +124,7 @@ body {
   border: 1px solid var(--line);
   border-radius: 10px;
   padding: 1rem;
-  background: #fff;
+  background: var(--bg-card);
 }
 
 .post-card h3 {
